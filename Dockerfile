@@ -21,5 +21,5 @@ DATABASE_URL=sqlite:////database/bot_data.db \
 LD_LIBRARY_PATH=/app/venv/lib/ \
 PYTHONPATH=/app/venv/lib/python3.10:/app/venv/lib/python3.10/site-packages:/usr/local/lib/python3.10:/usr/local/lib/python3.10/lib-dynload \
 PYTHONHOME=/app/venv/lib/python3.10
-ENTRYPOINT ["/usr/local/bin/python", " app.py"]
+ENTRYPOINT /usr/local/bin/python app.py
 

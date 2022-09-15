@@ -7,7 +7,7 @@ COPY requirements.txt .
 RUN source /app/venv/bin/activate; pip install -r requirements.txt
 FROM python:alpine
 RUN addgroup -g 1000 butler && adduser -u 1000 -G butler -h /home/butler -s /bin/sh -D butler
-RUN mkdir /app /database && chown -R informer:informer /app
+RUN mkdir /app /database && chown -R butler:butler /app
 WORKDIR /app
 COPY --from=build-env /app/venv /app/venv
 COPY . .

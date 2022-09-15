@@ -1,0 +1,12 @@
+.git
+.idea
+.dockerignore
+data.db
+bot_data.db
+bot.db
+README.md
+README.txt
+Dockerfile
+.gitignore
+vent1
+venv

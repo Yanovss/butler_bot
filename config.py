@@ -12,3 +12,6 @@ TOKEN = os.getenv('BOT_TOKEN')
 URL = os.getenv('URL')
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
+
+
+current_user = {'user_id': 0, 'chat_id': 0, 'msg_id': 0, 'forward_id': None}
